@@ -8,12 +8,12 @@
 
 import UIKit
 
-func RGB(_ red: CGFloat,_ green: CGFloat,_ blue: CGFloat,_ alpha: CGFloat = 1) -> UIColor {
+public func RGB(_ red: CGFloat,_ green: CGFloat,_ blue: CGFloat,_ alpha: CGFloat = 1) -> UIColor {
     return UIColor(red: red/255, green: green/255, blue: blue/255, alpha: alpha)
 }
 
 extension UIColor {
-    class func colorWithHexString(hex: String) -> UIColor {
+    public class func colorWithHexString(hex: String) -> UIColor {
         
         var cString = hex.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).uppercased()
         if (cString.hasPrefix("#")) {
@@ -46,7 +46,7 @@ extension UIColor {
 }
 
 extension NSObject {
-    var currentVC: UIViewController? {
+    public var currentVC: UIViewController? {
         var result: UIViewController?
         
         let tmpWindow = UIApplication.shared.keyWindow

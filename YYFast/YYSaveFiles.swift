@@ -8,7 +8,7 @@
 
 import UIKit
 
-class YYSaveFiles {
+open class YYSaveFiles {
     class func save(path: String, data: Data) {
         let pathURL = handlePathUrl(path)
         //拿到一个本地文件的URL

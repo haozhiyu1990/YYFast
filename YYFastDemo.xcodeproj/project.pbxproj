@@ -14,12 +14,9 @@
 		CDC904DF21ED721000F22B11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC904DD21ED721000F22B11 /* LaunchScreen.storyboard */; };
 		CDC904EE21EDAEB400F22B11 /* YYSaveFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC904ED21EDAEB400F22B11 /* YYSaveFiles.swift */; };
 		CDC904F321EDAEFE00F22B11 /* YYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC904F021EDAEFE00F22B11 /* YYExtension.swift */; };
-		D09734693F5B1B2B6ADA4432 /* Pods_YYFastDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 082E8924A8985D769184AB74 /* Pods_YYFastDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		082E8924A8985D769184AB74 /* Pods_YYFastDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YYFastDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB16D9BCC70390458561BB33 /* Pods-YYFastDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYFastDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-YYFastDemo/Pods-YYFastDemo.release.xcconfig"; sourceTree = "<group>"; };
 		CDC904D121ED720F00F22B11 /* YYFastDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYFastDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC904D421ED720F00F22B11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDC904D621ED720F00F22B11 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,7 +26,6 @@
 		CDC904E021ED721000F22B11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDC904ED21EDAEB400F22B11 /* YYSaveFiles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYSaveFiles.swift; sourceTree = "<group>"; };
 		CDC904F021EDAEFE00F22B11 /* YYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYExtension.swift; sourceTree = "<group>"; };
-		F9FBF01ECDA93C97BC018B82 /* Pods-YYFastDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYFastDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YYFastDemo/Pods-YYFastDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,38 +33,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D09734693F5B1B2B6ADA4432 /* Pods_YYFastDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4C4043521A878548609DF351 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F9FBF01ECDA93C97BC018B82 /* Pods-YYFastDemo.debug.xcconfig */,
-				AB16D9BCC70390458561BB33 /* Pods-YYFastDemo.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		61A0ADE200C0C4FF9E40D25B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				082E8924A8985D769184AB74 /* Pods_YYFastDemo.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		CDC904C821ED720F00F22B11 = {
 			isa = PBXGroup;
 			children = (
 				CDC904E621ED72A200F22B11 /* YYFast */,
 				CDC904D321ED720F00F22B11 /* YYFastDemo */,
 				CDC904D221ED720F00F22B11 /* Products */,
-				4C4043521A878548609DF351 /* Pods */,
-				61A0ADE200C0C4FF9E40D25B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,11 +85,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CDC904E321ED721000F22B11 /* Build configuration list for PBXNativeTarget "YYFastDemo" */;
 			buildPhases = (
-				3AE7C1F9DB0B6D86B3556506 /* [CP] Check Pods Manifest.lock */,
 				CDC904CD21ED720F00F22B11 /* Sources */,
 				CDC904CE21ED720F00F22B11 /* Frameworks */,
 				CDC904CF21ED720F00F22B11 /* Resources */,
-				B7C3BC91AC28A50F1AF7D961 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -169,45 +143,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		3AE7C1F9DB0B6D86B3556506 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-YYFastDemo-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B7C3BC91AC28A50F1AF7D961 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-YYFastDemo/Pods-YYFastDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YYFastDemo/Pods-YYFastDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CDC904CD21ED720F00F22B11 /* Sources */ = {
@@ -361,7 +296,6 @@
 		};
 		CDC904E421ED721000F22B11 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9FBF01ECDA93C97BC018B82 /* Pods-YYFastDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -379,7 +313,6 @@
 		};
 		CDC904E521ED721000F22B11 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AB16D9BCC70390458561BB33 /* Pods-YYFastDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

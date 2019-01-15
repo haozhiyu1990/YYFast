@@ -9,7 +9,7 @@
 import UIKit
 
 open class YYSaveFiles {
-    class func save(path: String, data: Data) {
+    public class func save(path: String, data: Data) {
         let pathURL = handlePathUrl(path)
         //拿到一个本地文件的URL
         let manager = FileManager.default
@@ -27,7 +27,7 @@ open class YYSaveFiles {
         }
     }
     
-    class func read(path: String) -> Data? {
+    public class func read(path: String) -> Data? {
         let pathURL = handlePathUrl(path)
         let manager = FileManager.default
         var url = manager.urls(for: .documentDirectory, in: .userDomainMask).first
@@ -41,7 +41,7 @@ open class YYSaveFiles {
         return nil
     }
     
-    class func clearCache() {
+    public class func clearCache() {
         // 取出cache文件夹目录 缓存文件都在这个目录下
         let manager = FileManager.default
         var url = manager.urls(for: .documentDirectory, in: .userDomainMask).first

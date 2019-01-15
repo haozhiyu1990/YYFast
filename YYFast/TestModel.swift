@@ -9,5 +9,6 @@
 import UIKit
 
 class TestModel: NSObject {
-
+    var hellow: String?
+    
 }

@@ -13,7 +13,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        print(UIDevice.current.isX())
+        NotificationCenter.default.addObserver(self, selector: #selector(statusBarDidChangeFrame(_:)), name: UIApplication.didChangeStatusBarFrameNotification, object: nil)
+        print(UIDevice.current.isX())        
+    }
+    
+    @objc func statusBarDidChangeFrame(_ not: Notification) {
+        print(UIApplication.shared.windows[0].safeAreaInsets)
     }
 }
 

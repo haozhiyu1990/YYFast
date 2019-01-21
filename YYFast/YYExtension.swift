@@ -20,7 +20,7 @@ extension UIDevice {
         guard #available(iOS 11.0, *) else {
             return false
         }
-        return UIApplication.shared.windows[0].safeAreaInsets != UIEdgeInsets.zero
+        return UIApplication.shared.windows[0].safeAreaInsets.bottom > 0
     }
 }
 

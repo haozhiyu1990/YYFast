@@ -8,8 +8,20 @@
 
 import UIKit
 
+public let KEYSCREEN_W = UIScreen.main.bounds.width
+public let KEYSCREEN_H = UIScreen.main.bounds.height
+
 public func RGB(_ red: CGFloat,_ green: CGFloat,_ blue: CGFloat,_ alpha: CGFloat = 1) -> UIColor {
     return UIColor(red: red/255, green: green/255, blue: blue/255, alpha: alpha)
+}
+
+extension UIDevice {
+    public func isX() -> Bool {
+        guard #available(iOS 11.0, *) else {
+            return false
+        }
+        return UIApplication.shared.windows[0].safeAreaInsets != UIEdgeInsets.zero
+    }
 }
 
 extension UIColor {

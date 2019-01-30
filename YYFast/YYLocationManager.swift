@@ -28,7 +28,7 @@ open class YYLocationManager: NSObject {
     }
     
     
-    public func startLocation(_ complete: @escaping ()->()) {
+    public func startLocation(_ complete: (()->())? = nil) {
         callBack = complete
         clmanager.startUpdatingLocation()
     }

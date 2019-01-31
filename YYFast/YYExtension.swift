@@ -48,7 +48,7 @@ extension UIColor {
         let bIndex = cString.index(cString.endIndex, offsetBy: -2)
         let bString = cString[bIndex...]
         
-        var r:CUnsignedInt = 0, g: CUnsignedInt = 0, b: CUnsignedInt = 0;
+        var r: CUnsignedInt = 0, g: CUnsignedInt = 0, b: CUnsignedInt = 0;
         Scanner(string: String(rString)).scanHexInt32(&r)
         Scanner(string: String(gString)).scanHexInt32(&g)
         Scanner(string: String(bString)).scanHexInt32(&b)

@@ -37,7 +37,7 @@ open class YYLocationManager: NSObject {
         let clgeocoder = CLGeocoder()
         clgeocoder.reverseGeocodeLocation(currentLocation!) { [weak self] (placemarks, _) in
             if let marks = placemarks {
-                if let mark = marks.last {
+                if let mark = marks.first {
                     let country = mark.country ?? ""
                     let administrativeArea = mark.administrativeArea ?? ""
                     let locality = mark.locality ?? ""
@@ -46,16 +46,11 @@ open class YYLocationManager: NSObject {
                     let subThoroughfare = mark.subThoroughfare ?? ""
                     
                     self?.address = country+administrativeArea+locality+subLocality+thoroughfare+subThoroughfare
-                    if let back = self?.callBack {
-                        back()
-                        self?.callBack = nil
-                    }
                 }
-            } else {
-                if let back = self?.callBack {
-                    back()
-                    self?.callBack = nil
-                }
+            } 
+            if let back = self?.callBack {
+                back()
+                self?.callBack = nil
             }
         }
     }

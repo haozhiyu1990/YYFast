@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CD5316A12201893400D8CBFA /* YYLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5316A02201893400D8CBFA /* YYLocationManager.swift */; };
-		CD635A30223B9C690072D7DA /* YYNavigationBackButtonHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD635A2F223B9C690072D7DA /* YYNavigationBackButtonHandler.swift */; };
 		CDC904D521ED720F00F22B11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC904D421ED720F00F22B11 /* AppDelegate.swift */; };
 		CDC904D721ED720F00F22B11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC904D621ED720F00F22B11 /* ViewController.swift */; };
 		CDC904DA21ED720F00F22B11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC904D821ED720F00F22B11 /* Main.storyboard */; };
@@ -20,7 +19,6 @@
 
 /* Begin PBXFileReference section */
 		CD5316A02201893400D8CBFA /* YYLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYLocationManager.swift; sourceTree = "<group>"; };
-		CD635A2F223B9C690072D7DA /* YYNavigationBackButtonHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYNavigationBackButtonHandler.swift; sourceTree = "<group>"; };
 		CDC904D121ED720F00F22B11 /* YYFastDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYFastDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC904D421ED720F00F22B11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDC904D621ED720F00F22B11 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,7 +77,6 @@
 				CDC904ED21EDAEB400F22B11 /* YYSaveFiles.swift */,
 				CDC904F021EDAEFE00F22B11 /* YYExtension.swift */,
 				CD5316A02201893400D8CBFA /* YYLocationManager.swift */,
-				CD635A2F223B9C690072D7DA /* YYNavigationBackButtonHandler.swift */,
 			);
 			path = YYFast;
 			sourceTree = "<group>";
@@ -158,7 +155,6 @@
 				CD5316A12201893400D8CBFA /* YYLocationManager.swift in Sources */,
 				CDC904F321EDAEFE00F22B11 /* YYExtension.swift in Sources */,
 				CDC904EE21EDAEB400F22B11 /* YYSaveFiles.swift in Sources */,
-				CD635A30223B9C690072D7DA /* YYNavigationBackButtonHandler.swift in Sources */,
 				CDC904D721ED720F00F22B11 /* ViewController.swift in Sources */,
 				CDC904D521ED720F00F22B11 /* AppDelegate.swift in Sources */,
 			);

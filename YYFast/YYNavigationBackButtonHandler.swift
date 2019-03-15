@@ -13,7 +13,7 @@ import UIKit
 }
 
 extension UIViewController: BackButtonHandlerProtocol {
-    public func navigationShouldPopOnBackButton() -> Bool {
+    open func navigationShouldPopOnBackButton() -> Bool {
         return true
     }
 }

@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "YYFast"
   spec.version      = "1.1.7"
-  # spec.summary      = "A short description of YYFast."
+  spec.summary      = "YYFast is mine"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,6 +25,7 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
+  YYFast 是我个人用的快速集成项目
                    DESC
 
   spec.homepage     = "https://github.com/haozhiyu1990/YYFast"

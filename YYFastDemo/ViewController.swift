@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         NotificationCenter.default.addObserver(self, selector: #selector(statusBarDidChangeFrame(_:)), name: UIApplication.didChangeStatusBarFrameNotification, object: nil)
-        print(UIDevice.current.isX())
+        print(UIDevice.isX())
 
         YYLocationManager.shared.startLocation {
             print(YYLocationManager.shared.address ?? "")

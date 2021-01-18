@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C485CA4E25B5354D00FD618F /* YYLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C485CA4B25B5354D00FD618F /* YYLocationManager.swift */; };
-		C485CA4F25B5354D00FD618F /* YYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C485CA4C25B5354D00FD618F /* YYExtension.swift */; };
-		C485CA5025B5354D00FD618F /* YYSaveFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C485CA4D25B5354D00FD618F /* YYSaveFiles.swift */; };
 		CDC904D521ED720F00F22B11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC904D421ED720F00F22B11 /* AppDelegate.swift */; };
 		CDC904D721ED720F00F22B11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC904D621ED720F00F22B11 /* ViewController.swift */; };
 		CDC904DA21ED720F00F22B11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC904D821ED720F00F22B11 /* Main.storyboard */; };
@@ -20,9 +17,6 @@
 
 /* Begin PBXFileReference section */
 		A47515ECD8DCEDBBDE0F77D9 /* Pods-YYFastDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYFastDemo.debug.xcconfig"; path = "Target Support Files/Pods-YYFastDemo/Pods-YYFastDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		C485CA4B25B5354D00FD618F /* YYLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYLocationManager.swift; sourceTree = "<group>"; };
-		C485CA4C25B5354D00FD618F /* YYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYExtension.swift; sourceTree = "<group>"; };
-		C485CA4D25B5354D00FD618F /* YYSaveFiles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYSaveFiles.swift; sourceTree = "<group>"; };
 		C512368B1FCE24412C8FE82B /* Pods-YYFastDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYFastDemo.release.xcconfig"; path = "Target Support Files/Pods-YYFastDemo/Pods-YYFastDemo.release.xcconfig"; sourceTree = "<group>"; };
 		CDC904D121ED720F00F22B11 /* YYFastDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYFastDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC904D421ED720F00F22B11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,20 +57,9 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C485CA4A25B5354D00FD618F /* YYFast */ = {
-			isa = PBXGroup;
-			children = (
-				C485CA4B25B5354D00FD618F /* YYLocationManager.swift */,
-				C485CA4C25B5354D00FD618F /* YYExtension.swift */,
-				C485CA4D25B5354D00FD618F /* YYSaveFiles.swift */,
-			);
-			path = YYFast;
-			sourceTree = "<group>";
-		};
 		CDC904C821ED720F00F22B11 = {
 			isa = PBXGroup;
 			children = (
-				C485CA4A25B5354D00FD618F /* YYFast */,
 				CDC904D321ED720F00F22B11 /* YYFastDemo */,
 				CDC904D221ED720F00F22B11 /* Products */,
 				2A5C19C09749E9DD1086E485 /* Pods */,
@@ -222,10 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDC904D721ED720F00F22B11 /* ViewController.swift in Sources */,
-				C485CA5025B5354D00FD618F /* YYSaveFiles.swift in Sources */,
-				C485CA4E25B5354D00FD618F /* YYLocationManager.swift in Sources */,
 				CDC904D521ED720F00F22B11 /* AppDelegate.swift in Sources */,
-				C485CA4F25B5354D00FD618F /* YYExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,7 +10,7 @@ import UIKit
 
 public let KEYSCREEN_W = UIScreen.main.bounds.width
 public let KEYSCREEN_H = UIScreen.main.bounds.height
-var kSafeAreaInsets: UIEdgeInsets {
+public var kSafeAreaInsets: UIEdgeInsets {
     if #available(iOS 11.0, *) {
         return UIApplication.shared.windows[0].safeAreaInsets
     } else {
@@ -124,7 +124,7 @@ extension NSObject {
 extension DispatchQueue {
     private static var _onceTracker = [String]()
     
-    class func once(file: String = #file, function: String = #function, line: Int = #line, block: (()->())) {
+    public class func once(file: String = #file, function: String = #function, line: Int = #line, block: (()->())) {
         let token = file + ":" + function + ":" + String(line)
         once(token: token, block: block)
     }

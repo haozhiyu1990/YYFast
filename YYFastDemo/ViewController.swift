@@ -22,7 +22,7 @@ class ViewController: UIViewController {
             print(YYLocationManager.shared.latitude ?? "")
             print(YYLocationManager.shared.longitude ?? "")
         }
-        kSafeAreaInsets
+        
     }
     
     @objc func statusBarDidChangeFrame(_ not: Notification) {

@@ -129,7 +129,7 @@ extension DispatchQueue {
         once(token: token, block: block)
     }
     
-    class func once(token: String, block: (()->())) {
+    public class func once(token: String, block: (()->())) {
         objc_sync_enter(self)
         defer { objc_sync_exit(self) }
         

@@ -141,3 +141,26 @@ extension DispatchQueue {
         block()
     }
 }
+
+extension Array {
+    /// 自定义去重方法
+    public func filterDeduplicates<E: Equatable>(_ filter: (Element) -> E) -> [Element] {
+        var result: [Element] = []
+        for element in self {
+            let filterElement = filter(element)
+            if !result.map({ filter($0) }).contains(filterElement) {
+                result.append(element)
+            }
+        }
+        
+        return result
+    }
+}
+
+extension Array where Element: Hashable {
+    /// 去重属性
+    public var deduplicates : [Element] {
+        var keys:[Element:()] = [:]
+        return filter { keys.updateValue((), forKey:$0) == nil }
+    }
+}

@@ -13,6 +13,10 @@
 		C4698DD625BABF18000EABA1 /* YYProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4698DD525BABF18000EABA1 /* YYProtocol.swift */; };
 		C4698DD925BAC049000EABA1 /* YYFramePro.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4698DD825BAC049000EABA1 /* YYFramePro.swift */; };
 		C4698DDC25BAC0DD000EABA1 /* YYEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4698DDB25BAC0DD000EABA1 /* YYEnum.swift */; };
+		C4698DE725BAC419000EABA1 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4698DE625BAC419000EABA1 /* API.swift */; };
+		C4698DEA25BAC494000EABA1 /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4698DE925BAC494000EABA1 /* HTTP.swift */; };
+		C4698DED25BAC6B3000EABA1 /* YYHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4698DEC25BAC6B3000EABA1 /* YYHUD.swift */; };
+		C4698DF025BAC83E000EABA1 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4698DEF25BAC83E000EABA1 /* BaseModel.swift */; };
 		CDC904D521ED720F00F22B11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC904D421ED720F00F22B11 /* AppDelegate.swift */; };
 		CDC904D721ED720F00F22B11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC904D621ED720F00F22B11 /* ViewController.swift */; };
 		CDC904DA21ED720F00F22B11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC904D821ED720F00F22B11 /* Main.storyboard */; };
@@ -29,6 +33,10 @@
 		C4698DD525BABF18000EABA1 /* YYProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYProtocol.swift; sourceTree = "<group>"; };
 		C4698DD825BAC049000EABA1 /* YYFramePro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYFramePro.swift; sourceTree = "<group>"; };
 		C4698DDB25BAC0DD000EABA1 /* YYEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYEnum.swift; sourceTree = "<group>"; };
+		C4698DE625BAC419000EABA1 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		C4698DE925BAC494000EABA1 /* HTTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTP.swift; sourceTree = "<group>"; };
+		C4698DEC25BAC6B3000EABA1 /* YYHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYHUD.swift; sourceTree = "<group>"; };
+		C4698DEF25BAC83E000EABA1 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		C512368B1FCE24412C8FE82B /* Pods-YYFastDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYFastDemo.release.xcconfig"; path = "Target Support Files/Pods-YYFastDemo/Pods-YYFastDemo.release.xcconfig"; sourceTree = "<group>"; };
 		CDC904D121ED720F00F22B11 /* YYFastDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYFastDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC904D421ED720F00F22B11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +114,10 @@
 			children = (
 				CDC904D421ED720F00F22B11 /* AppDelegate.swift */,
 				CDC904D621ED720F00F22B11 /* ViewController.swift */,
+				C4698DE625BAC419000EABA1 /* API.swift */,
+				C4698DE925BAC494000EABA1 /* HTTP.swift */,
+				C4698DEF25BAC83E000EABA1 /* BaseModel.swift */,
+				C4698DEC25BAC6B3000EABA1 /* YYHUD.swift */,
 				CDC904D821ED720F00F22B11 /* Main.storyboard */,
 				CDC904DB21ED721000F22B11 /* Assets.xcassets */,
 				CDC904DD21ED721000F22B11 /* LaunchScreen.storyboard */,
@@ -231,12 +243,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDC904D721ED720F00F22B11 /* ViewController.swift in Sources */,
+				C4698DED25BAC6B3000EABA1 /* YYHUD.swift in Sources */,
 				C4698DD625BABF18000EABA1 /* YYProtocol.swift in Sources */,
 				C4698DD325BABE55000EABA1 /* YYSaveFiles.swift in Sources */,
 				C4698DD125BABE55000EABA1 /* YYLocationManager.swift in Sources */,
 				CDC904D521ED720F00F22B11 /* AppDelegate.swift in Sources */,
+				C4698DF025BAC83E000EABA1 /* BaseModel.swift in Sources */,
+				C4698DEA25BAC494000EABA1 /* HTTP.swift in Sources */,
 				C4698DD225BABE55000EABA1 /* YYExtension.swift in Sources */,
 				C4698DDC25BAC0DD000EABA1 /* YYEnum.swift in Sources */,
+				C4698DE725BAC419000EABA1 /* API.swift in Sources */,
 				C4698DD925BAC049000EABA1 /* YYFramePro.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

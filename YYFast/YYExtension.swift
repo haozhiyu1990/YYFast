@@ -164,3 +164,18 @@ extension Array where Element: Hashable {
         return filter { keys.updateValue((), forKey:$0) == nil }
     }
 }
+
+extension String {
+    /// 保留两位小数
+    public var decimal: String {
+        guard let double = Double(self) else { return self }
+        let number = NSNumber(value: double)
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        formatter.minimumFractionDigits = 2
+        formatter.maximumFractionDigits = 2
+        formatter.usesGroupingSeparator = false
+        let decimalStr = formatter.string(from: number)
+        return decimalStr ?? self
+    }
+}

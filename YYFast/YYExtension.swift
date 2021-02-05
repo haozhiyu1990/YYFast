@@ -92,8 +92,7 @@ extension NSObject {
             if let presentVC = rootVC.presentedViewController {
                 next = presentVC
             } else {
-                let view = window.subviews[0]
-                next = view.next
+                next = rootVC
             }
         }
         

@@ -59,22 +59,23 @@ public extension TargetType {
     }
 }
 
-enum  HomeApi {
+enum  API {
     /// 获取活动账单
     case getDiscountBill(num: String)
     /// 获取活动子账单
     case getDiscountChildBill(num: String, parentNum: String)
+    case downloadFile
 }
 
-extension HomeApi: TargetType {
+extension API: TargetType {
     var method: Moya.Method {
         switch self {
         case .getDiscountBill:
             return .get
         case .getDiscountChildBill:
             return .get
-//        default:
-//            return .post
+        default:
+            return .post
         }
     }
     var path: String {
@@ -83,6 +84,8 @@ extension HomeApi: TargetType {
             return "/app/activity/get/activity/bill"
         case .getDiscountChildBill:
             return "/app/activity/get/child/bill"
+        case .downloadFile:
+            return ""
         }
     }
     
@@ -94,6 +97,8 @@ extension HomeApi: TargetType {
         case let .getDiscountChildBill(num, parentNum):
             params["activityNumber"] = num
             params["parentBill"] = parentNum
+        default:
+            return .requestPlain
         }
         //Task是一个枚举值，根据后台需要的数据，选择不同的http task。
         return .requestParameters(parameters: params, encoding: URLEncoding.default)
